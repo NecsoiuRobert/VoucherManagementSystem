@@ -1,0 +1,652 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::43:x, par l {comp panel2:::p::p, comp layeredPane1:::p:712:p}, space :p:23:p}};par l {seq {space :0:0:x, comp normalUserVoucherPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp normalUserPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp AdminUserPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp AdminCampaignPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp addCampaignPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp editCampaignPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp closeCampaignPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp beforeVoucherAdminPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp adminVoucherPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp redeemVoucherPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp generateVoucherPage:::p::p, space :0:0:x}}"
+			"$verticalGroup": "par l {seq l {space :p:37:p, comp layeredPane1:::p:378:p, space :::p, comp panel2:::p::p, space :::x}};par l {seq {space :0:0:x, comp normalUserVoucherPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp normalUserPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp AdminUserPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp AdminCampaignPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp addCampaignPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp editCampaignPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp closeCampaignPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp beforeVoucherAdminPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp adminVoucherPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp redeemVoucherPage:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp generateVoucherPage:::p::p, space :0:0:x}}"
+		} ) {
+			name: "this"
+			"title": "Voucher Management System"
+			add( new FormContainer( "javax.swing.JLayeredPane", new FormLayoutManager( class javax.swing.JLayeredPane ) ) {
+				name: "layeredPane1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :0:210:x, par l {seq {space :41:41:p, comp label3:::p:202:p}, seq {comp label1:::p:203:p, space :6:6:p, comp Users:::p::p}, seq {comp label2:::p:203:p, space :6:6:p, comp Campaigns:::p::p}, seq {space :93:93:p, comp button1:::p:110:p}}, space :0:205:x}}"
+					"$verticalGroup": "par l {seq {space :0:96:x, comp label3:::p:28:p, space :18:18:p, par l {seq {space :2:2:p, comp label1:::p:26:p}, comp Users:::p::p}, space :18:18:p, par l {seq {space :2:2:p, comp label2:::p:26:p}, comp Campaigns:::p::p}, space :34:34:p, comp button1:::p::p, space :0:91:x}}"
+				} ) {
+					name: "panel1"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "Voucher Management System"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Te rog alege fisierul Users"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Users"
+						"text": "Upload"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "UsersActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Te rog alege fisierul Campaigns"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Campaigns"
+						"text": "Upload"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CampaignsActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "START"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"x": 0
+					"y": 0
+					"width": 710
+					"height": 375
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {space :0:710:x};par l {seq {space :0:0:x, par l {seq {space :64:64:p, comp label6:::p:132:p}, comp label4:::p:85:p, comp Username:::p:197:p, comp label5:::p:85:p, comp Password:::p:197:p, seq {space :52:52:p, comp button2:::p:111:p}}, space :0:0:x}}"
+				"$verticalGroup": "par l {space :0:375:x};par l {seq {space :0:0:x, comp label6:::p::p, space :40:40:p, comp label4:::p::p, space :6:6:p, comp Username:::p::p, space :12:12:p, comp label5:::p::p, space :6:6:p, comp Password:::p::p, space :18:18:p, comp button2:::p::p, space :0:0:x}}"
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Username"
+					"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, -2, false )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Password"
+					"font": #SwingDerivedFont0
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "Username"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "Password"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Login"
+					"enabled": false
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 10, false )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "Login"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :::p, comp label9:::p:174:p, space ::122:x, comp button3:::p::p, space :p:86:p, comp Username3:::p:99:p, space :p:16:p}, seq l {space :p:110:p, comp label10:::p:353:p, space ::135:x}, seq t {space :::x, comp normalUserVoucherHolder:::p:507:p, space ::85:x}, seq l {space :p:231:p, comp Inapoi:::p:117:p, space ::250:x}}"
+				"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp Username3::b:p:26:p, comp label9::b:p::p, comp button3::b:p::p}, space :::p, comp label10:::p:48:p, space :::p, comp normalUserVoucherHolder:::p:189:p, space u:::p, comp Inapoi:::p::p, space ::37:x}}"
+			} ) {
+				name: "normalUserVoucherPage"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Username3"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "Voucher Management System"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "Aici sunt Voucherele tale"
+					"horizontalAlignment": 0
+					"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "normalUserVoucherHolder"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "table1"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Inapoi"
+					"text": "Inapoi "
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "InapoiActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "LOGOUT"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :::p, comp label7:::p:174:p, space :::x, comp button4:::p::p, space :p:108:p, comp Username2:::p:99:p, space :p:16:p}, seq l {space :p:122:p, par l {comp label8:::p:353:p, seq {space :p:27:p, comp seeCampaigns:::p:120:p, space :p:41:p, comp seeVouchers:::p::p}}, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp Username2::b:p:26:p, comp label7::b:p::p, comp button4::b:p::p}, space :p:34:p, comp label8:::p:48:p, space :p:59:p, par b {comp seeVouchers::b:p::p, comp seeCampaigns::b:p::p}, space ::157:x}}"
+			} ) {
+				name: "normalUserPage"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Username2"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Voucher Management System"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Bine ai venit, cu ce te putem ajuta?"
+					"horizontalAlignment": 0
+					"font": #SwingDerivedFont1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "seeCampaigns"
+					"text": "Vezi campanii"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "seeCampaignsActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "seeVouchers"
+					"text": "Vezi vouchere"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "seeVouchersActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button4"
+					"text": "LOGOUT"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq t {space :::p, comp label11:::p:174:p, space :p:68:p, comp button5:::p::p, space :::x, comp Username4:::p:99:p}, seq {par l {seq {space :p:123:p, comp label12:::p:353:p}, seq l {space :p:72:p, comp button6:::p:173:p, space :p:41:p, comp button7:::p:240:p}}, space :0:0:x}}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp label11::b:p::p, comp button5::b:p::p, comp Username4::b:p:26:p}, space :p:31:p, comp label12:::p:48:p, space :p:58:p, par b {comp button7::b:p::p, comp button6::b:p::p}, space ::161:x}}"
+			} ) {
+				name: "AdminUserPage"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Username4"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"text": "Voucher Management System"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label12"
+					"text": "Bine ai venit in panoul de administrare!"
+					"horizontalAlignment": 0
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button5"
+					"text": "LOGOUT"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button6"
+					"text": "Administreaza Campanii"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button7"
+					"text": "Administreaza Vouchere Campanie"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :::p, comp label13:::p:174:p, space :::x, comp Inapoi2:::p:117:p, space s:::p, comp button8:::p::p, space :p:38:p, comp Username5:::p:99:p, space :p:16:p}, seq {par l {seq {space :p:35:p, par l {comp normalUserVoucherHolder2:::p:520:p, comp button11::l:p::p, seq l {space :p:196:p, comp button12:::p::p}, seq l {comp button9:::p:110:p, space s:::p, comp button10:::p:116:p, space s:::p, comp button16:::p:110:p, space :18:18:p, comp button15:::p:116:p}}}, seq l {space :p:207:p, comp button14:::p::p}}, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp Username5::b:p:26:p, comp label13::b:p::p, comp button8::b:p::p, comp Inapoi2::b:p::p}, space :p:12:p, par l {par b {comp button9::b:p::p, comp button10::b:p::p}, comp button16:::p::p, comp button15:::p::p}, space :::p, comp normalUserVoucherHolder2:::p:189:p, space u:::p, par b {comp button11::b:p::p, comp button12::b:p::p}, space u:::p, comp button14:::p::p, space ::7:x}}"
+			} ) {
+				name: "AdminCampaignPage"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Username5"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label13"
+					"text": "Voucher Management System"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "normalUserVoucherHolder2"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "table2"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Inapoi2"
+					"text": "Inapoi "
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "InapoiActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Inapoi2ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button8"
+					"text": "LOGOUT"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button8ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button9"
+					"text": "Sort Cresc Nume"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button9ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button10"
+					"text": "Sort desc Nume"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button10ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button11"
+					"text": "Adauga Campanie"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button11ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button12"
+					"text": "Editeaza campanie"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button12ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button14"
+					"text": "Vezi detalii despre o campanie"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button14ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button15"
+					"text": "Sort desc Data"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button15ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button16"
+					"text": "Sort Cresc Data"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button16ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label14:::p:174:p, space :::x, comp Inapoi3:::p:117:p, space s:::p, comp button17:::p::p, space :p:38:p, comp Username6:::p:99:p, space :p:16:p}, seq {par l {seq {space :p:57:p, par l {comp label15::l:p:95:p, comp numeCampanie::l:p:174:p, comp label16::l:p:136:p, comp descriereCampanie::l:p:174:p, comp label20:::p:136:p, comp addBuget:::p:174:p}, space :p:63:p, par l {comp dataFinalizare:::p:174:p, comp label17:::p:136:p, comp dataStart:::p:174:p, comp label18:::p:136:p}}, seq l {space :p:179:p, comp label19:::p:183:p}, seq l {space :p:187:p, comp addCampaign:::p:157:p}}, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp Username6::b:p:26:p, comp label14::b:p::p, comp button17::b:p::p, comp Inapoi3::b:p::p}, space :::p, par b {comp label15::b:p::p, comp label17::b:p::p}, space :::p, par b {comp numeCampanie::b:p::p, comp dataStart::b:p::p}, space :::p, par b {comp label16::b:p::p, comp label18::b:p::p}, space :::p, par b {comp descriereCampanie::b:p::p, comp dataFinalizare::b:p::p}, space u:::p, comp label20:::p::p, space :6:6:p, comp addBuget:::p::p, space :p:28:p, comp label19:::p::p, space s:::p, comp addCampaign:::p::p, space ::32:x}}"
+			} ) {
+				name: "addCampaignPage"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Username6"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label14"
+					"text": "Voucher Management System"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Inapoi3"
+					"text": "Inapoi "
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "InapoiActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Inapoi3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button17"
+					"text": "LOGOUT"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "numeCampanie"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label15"
+					"text": "Nume Campanie"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label16"
+					"text": "Descriere Campanie"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "descriereCampanie"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label17"
+					"text": "Data Start"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "dataStart"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "dataFinalizare"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label18"
+					"text": "Data Finalizare"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addCampaign"
+					"text": "Adauga Campanie"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addCampaignActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label19"
+					"text": "Completeaza toate campurile"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label20"
+					"text": "Buget"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "addBuget"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label21:::p:174:p, space :::x, comp Inapoi4:::p:117:p, space s:::p, comp button18:::p::p, space :p:38:p, comp Username7:::p:99:p, space :p:16:p}, seq {par l {seq {space :p:57:p, par l {comp label22::l:p:95:p, comp numeCampanie2::l:p:174:p, comp label23::l:p:136:p, comp newDescriereCampanie::l:p:174:p, comp label27:::p:136:p, comp editBuget:::p:174:p}, par l {seq {space :p:63:p, par l {comp newDataFinalizare::l:p:174:p, comp label25::l:p:136:p, comp newDataStart::l:p:174:p, comp label24::l:p:136:p}}, seq l {space :p:49:p, comp searchCampaign:::p:123:p}}}, seq l {space :p:187:p, par l {comp editCampaign:::p:157:p, comp label26:::p:183:p}}}, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp Username7::b:p:26:p, comp label21::b:p::p, comp button18::b:p::p, comp Inapoi4::b:p::p}, space s:::p, par l {seq {comp label22:::p::p, space :::p, comp numeCampanie2:::p::p}, comp searchCampaign::l:p::p}, space s:::p, par b {comp label23::b:p::p, comp label24::b:p::p}, space :::p, par b {comp newDescriereCampanie::b:p::p, comp newDataStart::b:p::p}, space u:::p, par b {comp label27::b:p::p, comp label25::b:p::p}, space :6:6:p, par b {comp editBuget::b:p::p, comp newDataFinalizare::b:p::p}, space :p:28:p, comp label26:::p::p, space u:::p, comp editCampaign:::p::p, space ::14:x}}"
+			} ) {
+				name: "editCampaignPage"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Username7"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label21"
+					"text": "Voucher Management System"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Inapoi4"
+					"text": "Inapoi "
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "InapoiActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Inapoi3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button18"
+					"text": "LOGOUT"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "numeCampanie2"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label22"
+					"text": "Nume Campanie"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label23"
+					"text": "Descriere Campanie"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "newDescriereCampanie"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label24"
+					"text": "Data Start"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "newDataStart"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "newDataFinalizare"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label25"
+					"text": "Data Finalizare"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "editCampaign"
+					"text": "Modifica Campanie"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editCampaignActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label26"
+					"text": "Completeaza toate campurile"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label27"
+					"text": "Buget"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "editBuget"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "searchCampaign"
+					"text": "Cauta campanie"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchCampaignActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label28:::p:174:p, space :::x, comp Inapoi5:::p:117:p, space s:::p, comp button19:::p::p, space :p:38:p, comp Username8:::p:99:p, space :p:16:p}, seq {par l {seq {space :p:57:p, par l {comp label29::l:p:95:p, comp numeCampanie3::l:p:174:p, comp label30::l:p:136:p, comp newDescriereCampanie2::l:p:174:p, comp label33:::p:136:p, comp editBuget2:::p:174:p}, par l {seq {space :p:63:p, par l {comp newDataFinalizare2::l:p:174:p, comp label32::l:p:136:p, comp newDataStart2::l:p:174:p, comp label31::l:p:136:p}}, seq l {space :p:49:p, comp searchCampaign2:::p:123:p}}}, seq l {space :p:187:p, comp editCampaign2:::p:157:p}}, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp Username8::b:p:26:p, comp label28::b:p::p, comp button19::b:p::p, comp Inapoi5::b:p::p}, space s:::p, par l {seq {comp label29:::p::p, space :::p, comp numeCampanie3:::p::p}, comp searchCampaign2::l:p::p}, space s:::p, par b {comp label30::b:p::p, comp label31::b:p::p}, space :::p, par b {comp newDescriereCampanie2::b:p::p, comp newDataStart2::b:p::p}, space u:::p, par b {comp label33::b:p::p, comp label32::b:p::p}, space :6:6:p, par b {comp editBuget2::b:p::p, comp newDataFinalizare2::b:p::p}, space s:::p, comp editCampaign2:::p::p, space ::24:x}}"
+			} ) {
+				name: "closeCampaignPage"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Username8"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label28"
+					"text": "Voucher Management System"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Inapoi5"
+					"text": "Inapoi "
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "InapoiActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Inapoi3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button19"
+					"text": "LOGOUT"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "numeCampanie3"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label29"
+					"text": "Nume Campanie"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label30"
+					"text": "Descriere Campanie"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "newDescriereCampanie2"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label31"
+					"text": "Data Start"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "newDataStart2"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "newDataFinalizare2"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label32"
+					"text": "Data Finalizare"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "editCampaign2"
+					"text": "Inchide Campanie"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editCampaign2ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label33"
+					"text": "Buget"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "editBuget2"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "searchCampaign2"
+					"text": "Cauta campanie"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchCampaign2ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label34:::p:174:p, space :::x, comp Inapoi6:::p:117:p, space s:::p, comp button13:::p::p, space :p:38:p, comp Username9:::p:99:p, space :p:16:p}, seq l {space :p:114:p, par l {comp label35:::p:95:p, seq {comp numeCampanie4:::p:174:p, space :p:35:p, comp searchCampaign3:::p:123:p}}, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp Username9::b:p:26:p, comp label34::b:p::p, comp button13::b:p::p, comp Inapoi6::b:p::p}, space :p:74:p, comp label35:::p::p, space :::p, par b {comp numeCampanie4::b:p::p, comp searchCampaign3::b:p::p}, space ::116:x}}"
+			} ) {
+				name: "beforeVoucherAdminPage"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Username9"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label34"
+					"text": "Voucher Management System"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Inapoi6"
+					"text": "Inapoi "
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "InapoiActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Inapoi2ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button13"
+					"text": "LOGOUT"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "numeCampanie4"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label35"
+					"text": "Nume Campanie"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "searchCampaign3"
+					"text": "Alege campanie"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchCampaign3ActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchCampaign3ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :::p, comp label36:::p:174:p, space ::122:x, comp button20:::p::p, space :p:86:p, comp Username10:::p:99:p, space :p:16:p}, seq {par l {seq l {space :p:110:p, comp label37:::p:353:p}, seq l {space :p:36:p, comp normalUserVoucherHolder3:::p:507:p}, seq l {space :p:107:p, comp generare:::p:117:p, space :p:27:p, comp redeem:::p:117:p, space :p:31:p, comp Inapoi7:::p:117:p}}, space ::55:x}}"
+				"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp Username10::b:p:26:p, comp label36::b:p::p, comp button20::b:p::p}, space :::p, comp label37:::p:48:p, space :::p, comp normalUserVoucherHolder3:::p:189:p, space u:::p, par b {comp generare::b:p::p, comp redeem::b:p::p, comp Inapoi7::b:p::p}, space ::37:x}}"
+			} ) {
+				name: "adminVoucherPage"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Username10"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label36"
+					"text": "Voucher Management System"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label37"
+					"text": "Voucherele din campanie"
+					"horizontalAlignment": 0
+					"font": #SwingDerivedFont1
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "normalUserVoucherHolder3"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "table3"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Inapoi7"
+					"text": "Inapoi "
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "InapoiActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Inapoi7ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button20"
+					"text": "LOGOUT"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "redeem"
+					"text": "Redeem"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "InapoiActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "redeemActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "generare"
+					"text": "Generare"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "InapoiActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "generareActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :::p, comp label38:::p:174:p, space :::x, comp button21:::p::p, space :p:86:p, comp Username11:::p:99:p, space :p:16:p}, seq {par l {seq {space :p:120:p, par l {seq {comp VoucherCode:::p:127:p, space :p:44:p, comp redeemVoucher:::p::p}, comp label39:::p:103:p}}, seq l {space :p:217:p, comp Inapoi8:::p:117:p}}, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp Username11::b:p:26:p, comp label38::b:p::p, comp button21::b:p::p}, space :p:78:p, comp label39:::p::p, space :::p, par b {comp VoucherCode::b:p::p, comp redeemVoucher::b:p::p}, space :p:33:p, comp Inapoi8:::p::p, space ::135:x}}"
+			} ) {
+				name: "redeemVoucherPage"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Username11"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label38"
+					"text": "Voucher Management System"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Inapoi8"
+					"text": "Inapoi "
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "InapoiActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Inapoi8ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button21"
+					"text": "LOGOUT"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "VoucherCode"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label39"
+					"text": " Cod Voucher"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "redeemVoucher"
+					"text": "Redeem Voucher"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "redeemVoucherActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :::p, comp label40:::p:174:p, space :::x, comp button22:::p::p, space :p:86:p, comp Username12:::p:99:p, space :p:16:p}, seq l {space :p:120:p, par l {comp label43:::p:103:p, comp value:::p:127:p, comp label41::l:p:103:p, comp userMail::l:p:127:p, comp label42::l:p:103:p, comp voucherType::l:p:127:p, seq l {comp generateVoucher:::p::p, space :p:28:p, comp Inapoi9:::p:117:p}}, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp Username12::b:p:26:p, comp label40::b:p::p, comp button22::b:p::p}, space s:::p, comp label41:::p::p, space u:::p, comp userMail:::p::p, space s:::p, comp label42:::p::p, space u:::p, comp voucherType:::p::p, space u:::p, comp label43:::p::p, space :12:12:p, comp value:::p::p, space s:::p, par b {comp generateVoucher::b:p::p, comp Inapoi9::b:p::p}, space ::70:x}}"
+			} ) {
+				name: "generateVoucherPage"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Username12"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label40"
+					"text": "Voucher Management System"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Inapoi9"
+					"text": "Inapoi "
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "InapoiActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Inapoi8ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button22"
+					"text": "LOGOUT"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "userMail"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label41"
+					"text": "Email utilizator"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "generateVoucher"
+					"text": "Generare Voucher"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "generateVoucherActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label42"
+					"text": "Gift/Loyalty"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "voucherType"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label43"
+					"text": "Valoare"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "value"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 780, 485 )
+		} )
+	}
+}
